@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>About Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@700&family=Noto+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Serif', serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+            text-align: right;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #bbb;
+        }
+        .hero {
+            background-image: url("https://www.ihaklai.org.il/media/k2/items/cache/8c7ead0b88751b48d78f440d64515e7d_XL.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
+        .content h1 {
+            font-size: 40px;
+            margin-top: 0;
+        }
+        .content p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+        .profiles {
+            position: absolute;
+            top: 50%;
+            right: 50px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 20px;
+        }
+        .profile {
+            border: solid;
+            border-color: #333;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .profile p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <a onclick="location.replace('/about')">מי אנחנו</a>
+        <a onclick="location.replace('/')">דף הבית</a>
+        <a onclick="location.replace('/contact')">ליצור איתנו קשר</a>
+        <a onclick="location.replace('/donate')">לתרומה</a>
+    </nav>
+    <div class="hero"></div>
+    <div class="content">
+        <h1>מי אנחנו</h1>
+        <p>אנחנו 3 תלמידים מתיכון מגידו שגרים בקיבוצים ולכן החקלאות היא חלק גדול מחיינו <br>
+        ולכן החלטנו לעשות את העבודה שלנו באזרחות על הפשיעה החקלאית וזה הנסיון שלנו לעזור לפתור את הבעיה</p>
+    </div>
+    <div class="profiles">
+        <div class="profile">
+            <img src="https://www.fnaviation.co.il/wp-content/uploads/2019/05/cat8.png" alt="Profile 1">
+            <p>כפיר עדן</p>
+        </div>
+        <div class="profile">
+            <img src="https://dfn.co.il/wp-content/uploads/2020/07/IMG-20200716-WA0031-1.jpg" alt="Profile 2">
+            <p>אביעד בן עמי</p>
+        </div>
+        <div class="profile">
+            <img src="https://img.mako.co.il/2019/10/16/RTS2RBAV_i.jpg" alt="Profile 3">
+            <p>יונתן סירולניק</p>
+        </div>
+    </div>
+</body>
+</html>
